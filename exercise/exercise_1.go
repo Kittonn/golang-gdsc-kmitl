@@ -1,25 +1,19 @@
-package main
+package exercise
 
 import (
 	"fmt"
 )
 
-func Question_1() {
+func Exercise_1() {
 	a := "BNK"
 	b := 48
 	c := true
 	word := fmt.Sprintf("%v.%v.%v", a, b, c)
 	fmt.Println(word)
-}
-
-func Question_2() {
+	fmt.Println("-----")
 	type kitton string
 	var name kitton
 	fmt.Printf("%T", name)
-}
-
-func main() {
-	Question_1()
+	fmt.Println()
 	fmt.Println("-----")
-	Question_2()
 }

@@ -1,19 +1,17 @@
-package main
+package exercise
 
 import (
 	"fmt"
 	"time"
 )
 
-func Question_1() {
+func Exercise_2() {
 	for i := 6; i <= 10; i++ {
 		if i%2 == 0 {
 			fmt.Println(i)
 		}
 	}
-}
-
-func Question_2() {
+	fmt.Println("-----")
 	j := 10
 	for j > 0 {
 		if j == 3 {
@@ -24,9 +22,7 @@ func Question_2() {
 		}
 		j--
 	}
-}
-
-func Question_3() {
+	fmt.Println("-----")
 	day := time.Now().Weekday()
 	switch day {
 	case time.Saturday:
@@ -39,12 +35,5 @@ func Question_3() {
 		word := fmt.Sprintf("%v is weekday", day)
 		fmt.Println(word)
 	}
-}
-
-func main() {
-	Question_1()
 	fmt.Println("-----")
-	Question_2()
-	fmt.Println("-----")
-	Question_3()
 }

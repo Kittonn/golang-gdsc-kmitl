@@ -1,10 +1,10 @@
-package main
+package exercise
 
 import (
 	"fmt"
 )
 
-func main() {
+func Exercise_3() {
 	s := make([]int, 0, 5)
 	for i := 1; i < 10; i += 2 {
 		s = append(s, i)
@@ -25,4 +25,5 @@ func main() {
 	for key, value := range data {
 		fmt.Println(key, value)
 	}
+	fmt.Println("-----")
 }
